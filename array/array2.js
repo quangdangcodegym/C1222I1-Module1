@@ -5,6 +5,7 @@ arr[2] = [2,1,6,2,7];
 arr[3] = [2,3,3,7,7];
 arr[4] = [1,5,4,7,9];
 
+// Hiển thị mảng 2 chiều
 let str = "";
 for(let i=0;i<arr.length;i++){
     for(let j=0;j<arr[0].length;j++){
@@ -14,6 +15,7 @@ for(let i=0;i<arr.length;i++){
 }
 console.log(str);
 
+// Tính tổng giá trị trên 2 đường chéo
 let total = 0
 for(let i=0;i<arr.length;i++){
     for(let j=0;j<arr[i].length;j++){
@@ -24,6 +26,7 @@ for(let i=0;i<arr.length;i++){
 }
 console.log("Total: " + total);
 
+// Tính tổng tam giác dưới bên trái
 let totalTriangleDown = 0;
 for(let i=0;i<arr.length;i++){
     for(let j=0;j<arr[i].length-1-i;j++){
@@ -32,7 +35,7 @@ for(let i=0;i<arr.length;i++){
 }
 console.log("totalTriangleDown: " + totalTriangleDown);
 
-
+// Tính tổng tam giác dưới bên phải
 let totalTriangleDown2 = 0;
 for(let i=0;i<arr.length;i++){
     for(let j=i;j<arr[i].length;j++){
